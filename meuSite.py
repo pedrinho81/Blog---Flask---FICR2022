@@ -15,7 +15,7 @@ def index():
 def post():
     return render_template('post.html')
 
-@app.route('/ranking8profissoesquemaispagamnati')
+@app.route('/post2')
 def post2():
    return render_template('post2.html')
 
