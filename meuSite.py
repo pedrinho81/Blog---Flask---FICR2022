@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 
-
 app = Flask(__name__)
 
 # @app.route('/')
@@ -11,9 +10,17 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/bot')
+def bot():
+    return render_template('bot.html')
+
 @app.route('/post')
 def post():
     return render_template('post.html')
+
+@app.route('/respostas')
+def respostas():
+    return render_template('respostas.html')
 
 @app.route('/post2')
 def post2():
